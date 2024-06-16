@@ -21,8 +21,7 @@ public class Review {
     private UUID id;
 
     @Nonnull
-    @ManyToMany
-    private Trainer trainer;
+    private UUID trainer;
 
     @Nonnull
     private UUID userId;

@@ -22,8 +22,7 @@ public class Schedule {
     private UUID id;
 
     @Nonnull
-    @OneToMany
-    private Trainer trainer;
+    private UUID trainerId;
 
     @Nonnull
     private UUID userId;

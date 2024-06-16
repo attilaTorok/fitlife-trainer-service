@@ -4,6 +4,7 @@ import jakarta.annotation.Nonnull;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @Entity(name = "trainers")
@@ -27,5 +28,12 @@ public class Trainer {
     private String specialization;
 
     private Float rating;
+
+    @OneToMany
+    private List<Schedule> schedules;
+
+    @OneToMany
+    private List<Review> reviews;
+
 
 }
