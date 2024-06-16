@@ -22,6 +22,9 @@ public class Trainer {
     private UUID id;
 
     @Nonnull
+    private UUID userId;
+
+    @Nonnull
     private String name;
 
     @Nonnull

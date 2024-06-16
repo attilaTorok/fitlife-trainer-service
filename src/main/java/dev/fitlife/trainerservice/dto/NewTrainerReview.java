@@ -2,9 +2,12 @@ package dev.fitlife.trainerservice.dto;
 
 import jakarta.annotation.Nonnull;
 
+import java.util.UUID;
+
 public record NewTrainerReview(
-        @Nonnull String name,
-        @Nonnull String specialization,
-        Float rating
+        @Nonnull UUID trainerId,
+        @Nonnull UUID userId,
+        @Nonnull Float rating,
+        String comment
 ) {
 }

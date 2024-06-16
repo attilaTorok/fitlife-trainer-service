@@ -65,6 +65,9 @@ databaseChangeLog:
                   name: id
                   type: UUID
               - column:
+                  name: userId
+                  type: UUID
+              - column:
                   name: name
                   type: VARCHAR(255)
               - column:
@@ -172,4 +175,16 @@ databaseChangeLog:
             constraintName: fk_trasch_on_trainer
             referencedColumnNames: id
             referencedTableName: trainers
+  - changeSet:
+      id: '12'
+      author: attilaTorok
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: user_id
+                  type: UUID
+            tableName: trainers
+
 

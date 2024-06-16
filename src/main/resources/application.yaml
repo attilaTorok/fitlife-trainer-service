@@ -2,7 +2,7 @@ spring:
   liquibase:
     change-log: classpath:db.changelog/db.changelog-master.yaml
     enabled: true
-    drop-first: true
+    drop-first: false
 
 server:
   servlet:
