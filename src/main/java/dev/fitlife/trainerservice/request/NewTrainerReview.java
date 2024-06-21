@@ -1,4 +1,4 @@
-package dev.fitlife.trainerservice.dto;
+package dev.fitlife.trainerservice.request;
 
 import jakarta.annotation.Nonnull;
 

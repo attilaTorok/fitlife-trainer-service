@@ -21,7 +21,7 @@ public class Review {
     private UUID id;
 
     @Nonnull
-    private UUID trainer;
+    private UUID trainerId;
 
     @Nonnull
     private UUID userId;

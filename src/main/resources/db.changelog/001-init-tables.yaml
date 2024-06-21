@@ -14,7 +14,7 @@ databaseChangeLog:
                   name: id
                   type: UUID
               - column:
-                  name: trainer
+                  name: trainer_id
                   type: UUID
               - column:
                   name: user_id
